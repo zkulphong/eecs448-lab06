@@ -49,6 +49,8 @@ bool Test::testConstructor(){
         else{
                 return(false);
         }
+        
+        delete testList;
 }
 
 
@@ -73,6 +75,8 @@ bool Test::testSizeEmpty(){
         else{
                 return(false);
         }
+        
+        delete testList;
 
 }
 
@@ -85,7 +89,7 @@ bool Test::testEmptyBoolean(){
         else{
                 return(false);
         }
-
+        delete testList;
 }
 
 bool Test::testWithBoolean(){
@@ -98,7 +102,7 @@ bool Test::testWithBoolean(){
         else{
                 return(false);
         }
-
+        delete testList;
 }
 
 bool Test::testAddBack(){
@@ -123,6 +127,7 @@ bool Test::testRemoveBackEmpty(){
         else{
                 return(false);
         }
+        delete testList;       
 }
 
 bool Test::testRemoveBackNotEmpty(){
@@ -148,6 +153,7 @@ bool Test::testRemoveBack(){
         else{
                 return(false);
         }
+        delete testList;        
 }
 
 bool Test::testAddFront(){
@@ -161,7 +167,7 @@ bool Test::testAddFront(){
         else{
                 return(false);
         }
-
+        delete testList;
 }
 
 bool Test::testRemoveFrontEmpty(){
@@ -185,6 +191,7 @@ bool Test::testRemoveFrontNotEmpty(){
         else{
                 return(false);
         }
+        delete testList;        
 }
 
 bool Test::testRemoveFront(){
@@ -212,6 +219,7 @@ bool Test::testAddFrontTwice(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddBackTwice(){
@@ -226,6 +234,7 @@ bool Test::testAddBackTwice(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddBackThenFront(){
@@ -240,6 +249,7 @@ bool Test::testAddBackThenFront(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddFrontThenBack(){
@@ -254,6 +264,7 @@ bool Test::testAddFrontThenBack(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddFrontTwiceThenRemoveFront(){
@@ -269,6 +280,7 @@ bool Test::testAddFrontTwiceThenRemoveFront(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddFrontTwiceThenRemoveBack(){
@@ -299,6 +311,7 @@ bool Test::testAddBackTwiceThenRemoveFront(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddBackTwiceThenRemoveBack(){
@@ -314,6 +327,7 @@ bool Test::testAddBackTwiceThenRemoveBack(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddFrontTwiceSize(){
@@ -328,6 +342,7 @@ bool Test::testAddFrontTwiceSize(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddBackTwiceSize(){
@@ -342,6 +357,7 @@ bool Test::testAddBackTwiceSize(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testAddBackAddFrontSize(){
@@ -356,6 +372,7 @@ bool Test::testAddBackAddFrontSize(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testSearchValueIn(){
@@ -369,6 +386,7 @@ bool Test::testSearchValueIn(){
         else{
                 return(false);
         }
+        delete testList;
 }
 
 bool Test::testSearchValueNotIn(){
@@ -382,4 +400,5 @@ bool Test::testSearchValueNotIn(){
         else{
                 return(false);
         }
+        delete testList;
 }
