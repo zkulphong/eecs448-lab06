@@ -16,27 +16,28 @@ void Test::executeTests(){
         std::cout << "Test 2: Destructor - " << testDestructor() << "\n";
         std::cout << "Test 3: SizeEmpty - " << testSizeEmpty() << "\n";
         std::cout << "Test 4: EmptyBoolean - " << testEmptyBoolean() << "\n";
-        std::cout << "Test 5: AddBack - " << testAddBack() << "\n";
-        std::cout << "Test 6: RemoveBackEmpty - " << testRemoveBackEmpty() << "\n";
-        std::cout << "Test 7: RemoveBackNotEmpty - " << testRemoveBackNotEmpty() << "\n";
-        std::cout << "Test 8: AddFront - " << testAddFront() << "\n";
-        std::cout << "Test 9: RemoveFrontEmpty - " << testRemoveFrontEmpty() << "\n";
-        std::cout << "Test 10: RemoveFrontNotEmpty - " << testRemoveFrontNotEmpty() << "\n";
-        std::cout << "Test 11: AddFrontTwice - " << testAddFrontTwice() << "\n";
-        std::cout << "Test 12: AddBackTwice - " << testAddBackTwice() << "\n";
-        std::cout << "Test 13: AddBackThenFront - " << testAddBackThenFront() << "\n";
-        std::cout << "Test 14: AddFrontThenBack - " << testAddFrontThenBack() << "\n";
-        std::cout << "Test 15: AddFrontTwiceThenRemoveFront - " << testAddFrontTwiceThenRemoveFront() << "\n";
-        std::cout << "Test 16: AddFrontTwiceThenRemoveBack - " << testAddFrontTwiceThenRemoveBack() << "\n";
-        std::cout << "Test 17: AddBackTwiceThenRemoveFront - " << testAddBackTwiceThenRemoveFront() << "\n";
-        std::cout << "Test 18: AddBackTwiceThenRemoveBack - " << testAddBackTwiceThenRemoveBack() << "\n";
-        std::cout << "Test 19: AddFrontTwiceSize - " << testAddFrontTwiceSize() << "\n";
-        std::cout << "Test 20: AddBackTwiceSize - " << testAddBackTwiceSize() << "\n";
-        std::cout << "Test 21: AddBackAddFrontSize - " << testAddBackAddFrontSize() << "\n";
-        std::cout << "Test 22: SearchValueIn - " << testSearchValueIn() << "\n";
-        std::cout << "Test 23: SearchValueNotIn - " << testSearchValueNotIn() << "\n";
-        std::cout << "Test 24: RemoveFront - " << testRemoveFront() << "\n";
-        std::cout << "Test 25: RemoveBack - " << testRemoveBack() << "\n";
+        std::cout << "Test 5: WithBoolean - " << testWithBoolean() << "\n";
+        std::cout << "Test 6: AddBack - " << testAddBack() << "\n";
+        std::cout << "Test 7: RemoveBackEmpty - " << testRemoveBackEmpty() << "\n";
+        std::cout << "Test 8: RemoveBackNotEmpty - " << testRemoveBackNotEmpty() << "\n";
+        std::cout << "Test 9: AddFront - " << testAddFront() << "\n";
+        std::cout << "Test 10: RemoveFrontEmpty - " << testRemoveFrontEmpty() << "\n";
+        std::cout << "Test 11: RemoveFrontNotEmpty - " << testRemoveFrontNotEmpty() << "\n";
+        std::cout << "Test 12: AddFrontTwice - " << testAddFrontTwice() << "\n";
+        std::cout << "Test 13: AddBackTwice - " << testAddBackTwice() << "\n";
+        std::cout << "Test 14: AddBackThenFront - " << testAddBackThenFront() << "\n";
+        std::cout << "Test 15: AddFrontThenBack - " << testAddFrontThenBack() << "\n";
+        std::cout << "Test 16: AddFrontTwiceThenRemoveFront - " << testAddFrontTwiceThenRemoveFront() << "\n";
+        std::cout << "Test 17: AddFrontTwiceThenRemoveBack - " << testAddFrontTwiceThenRemoveBack() << "\n";
+        std::cout << "Test 18: AddBackTwiceThenRemoveFront - " << testAddBackTwiceThenRemoveFront() << "\n";
+        std::cout << "Test 19: AddBackTwiceThenRemoveBack - " << testAddBackTwiceThenRemoveBack() << "\n";
+        std::cout << "Test 20: AddFrontTwiceSize - " << testAddFrontTwiceSize() << "\n";
+        std::cout << "Test 21: AddBackTwiceSize - " << testAddBackTwiceSize() << "\n";
+        std::cout << "Test 22: AddBackAddFrontSize - " << testAddBackAddFrontSize() << "\n";
+        std::cout << "Test 23: SearchValueIn - " << testSearchValueIn() << "\n";
+        std::cout << "Test 24: SearchValueNotIn - " << testSearchValueNotIn() << "\n";
+        std::cout << "Test 25: RemoveFront - " << testRemoveFront() << "\n";
+        std::cout << "Test 26: RemoveBack - " << testRemoveBack() << "\n";
 }
 
 bool Test::testConstructor(){
@@ -78,6 +79,19 @@ bool Test::testSizeEmpty(){
 bool Test::testEmptyBoolean(){
         testList = new LinkedListOfInts();
         if(testList->isEmpty() == true){
+                return(true);
+        }
+
+        else{
+                return(false);
+        }
+
+}
+
+bool Test::testWithBoolean(){
+        testList = new LinkedListOfInts();
+        testList->addBack(8);
+        if(testList->isEmpty() == false){
                 return(true);
         }
 

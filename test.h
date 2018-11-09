@@ -13,6 +13,8 @@ class Test{
 
         ~Test();
 
+        bool testWithBoolean();
+        
         void executeTests();
 
         bool testConstructor();
