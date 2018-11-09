@@ -1,6 +1,6 @@
 /**
-*	@author 
-*	@date 
+*	@author
+*	@date
 *	@file main.cpp
 *	@brief driver for LinkedList demo
 */
@@ -13,8 +13,7 @@ int main(int argc, char** argv)
 	Test tester;
 
 	tester.executeTests();
-	
+
 	return (0);
 
 }
-

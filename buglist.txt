@@ -1,0 +1,5 @@
+1. removeFront returns false even if the list is not empty
+2. removeBack returns false even if the list is not empty
+3. removeFront doesn't remove
+4. removeBack doesn't remove
+5. AddBack doesn't add to the correct location

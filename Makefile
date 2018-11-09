@@ -3,16 +3,14 @@
 
 
 #Add needed Test.o
-prog: main.o test.o LinkedListOfInts.o
+prog: main.o LinkedListOfInts.o test.o
 	g++ -g -Wall -std=c++11 main.o LinkedListOfInts.o test.o -o prog
+
+main.o: main.cpp test.h
+	g++ -g -Wall -std=c++11 -c main.cpp test.cpp
 
 test.o: test.h test.cpp
 	g++ -g -Wall -std=c++11 -c test.cpp
-
-main.o: main.cpp 
-	g++ -g -Wall -std=c++11 -c main.cpp
-
-	
 #Add needed Test.o recipe and compiler command
 
 

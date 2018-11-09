@@ -1,5 +1,7 @@
 #include "test.h"
 #include "LinkedListOfInts.h"
+#include <iostream>
+
 Test::Test(){
         testList = nullptr;
 }
@@ -9,6 +11,7 @@ Test::~Test(){
 }
 
 void Test::executeTests(){
+        std::cout << "1 = Pass, 0 = Fail\n";
         std::cout << "Test 1: Constructor - " << testConstructor() << "\n";
         std::cout << "Test 2: Destructor - " << testDestructor() << "\n";
         std::cout << "Test 3: SizeEmpty - " << testSizeEmpty() << "\n";
@@ -38,7 +41,7 @@ void Test::executeTests(){
 
 bool Test::testConstructor(){
         testList = new LinkedListOfInts();
-        if(testList->toVector().size() == 1){
+        if(testList->toVector().size() == 0){
                 return(true);
         }
 
@@ -105,7 +108,7 @@ bool Test::testRemoveBackEmpty(){
 
         else{
                 return(false);
-        }    
+        }
 }
 
 bool Test::testRemoveBackNotEmpty(){
@@ -117,7 +120,7 @@ bool Test::testRemoveBackNotEmpty(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testRemoveBack(){
@@ -130,7 +133,7 @@ bool Test::testRemoveBack(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testAddFront(){
@@ -155,7 +158,7 @@ bool Test::testRemoveFrontEmpty(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testRemoveFrontNotEmpty(){
@@ -167,7 +170,7 @@ bool Test::testRemoveFrontNotEmpty(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testRemoveFront(){
@@ -180,7 +183,7 @@ bool Test::testRemoveFront(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testAddFrontTwice(){
@@ -251,7 +254,7 @@ bool Test::testAddFrontTwiceThenRemoveFront(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testAddFrontTwiceThenRemoveBack(){
@@ -266,7 +269,7 @@ bool Test::testAddFrontTwiceThenRemoveBack(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testAddBackTwiceThenRemoveFront(){
@@ -281,7 +284,7 @@ bool Test::testAddBackTwiceThenRemoveFront(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testAddBackTwiceThenRemoveBack(){
@@ -296,7 +299,7 @@ bool Test::testAddBackTwiceThenRemoveBack(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testAddFrontTwiceSize(){
@@ -310,7 +313,7 @@ bool Test::testAddFrontTwiceSize(){
 
         else{
                 return(false);
-        }  
+        }
 }
 
 bool Test::testAddBackTwiceSize(){
@@ -324,7 +327,7 @@ bool Test::testAddBackTwiceSize(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testAddBackAddFrontSize(){
@@ -338,7 +341,7 @@ bool Test::testAddBackAddFrontSize(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testSearchValueIn(){
@@ -351,7 +354,7 @@ bool Test::testSearchValueIn(){
 
         else{
                 return(false);
-        } 
+        }
 }
 
 bool Test::testSearchValueNotIn(){
@@ -364,8 +367,5 @@ bool Test::testSearchValueNotIn(){
 
         else{
                 return(false);
-        } 
+        }
 }
-
-
-
